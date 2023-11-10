@@ -44,7 +44,7 @@ After installation, connect to your server's IP address. The system will prompt 
 Interested in contributing to OpenBox? Great! Please submit a pull request with details of your changes. We appreciate your efforts to improve the project.
 
 ## License
-OpenBox is available under the MIT License. For more details, see the LICENSE file in the repository.
+OpenBox is available under the MIT License.
 
 ## Contact
 For any queries or support requests, please open an issue on the repository.
