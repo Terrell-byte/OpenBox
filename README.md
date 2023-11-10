@@ -1,6 +1,6 @@
 # OpenBox
 <p align="center">
-  <img src="https://github.com/Terrell-byte/OpenBox/blob/main/OpenBox-logo.png" />
+  <img src="https://github.com/Terrell-byte/OpenBox/blob/main/client/Resources/Images/OpenBox-logo.png" />
 </p>
 <p align="center">
     <a href="https://github.com/Terrell-byte/OpenBox/pulse">
