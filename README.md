@@ -30,6 +30,9 @@ cd OpenBox/
 git config core.sparseCheckout true
 echo "server/*" >> .git/info/sparse-checkout
 git checkout
+cd server/Docker
+docker-compose build
+docker-compose up
 ```
 **Client Side:**
 Download the latest release .exe file from our releases page.
