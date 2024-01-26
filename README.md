@@ -1,4 +1,4 @@
-# OpenBox
+# OpenBox - Zero Knowledge Database
 <p align="center">
   <img src="https://github.com/Terrell-byte/OpenBox/blob/main/client/Resources/Images/OpenBox-logo.png" />
 </p>
@@ -15,7 +15,7 @@
 </p>
 
 ## Introduction
-OpenBox offers a user-friendly solution for setting up a personal home server. Mimicking the functionality of services like Dropbox, OpenBox provides a cost-effective and efficient alternative for those seeking to manage their own server. With an easy drag-and-drop interface for file management and simple server deployment using Docker, OpenBox is ideal for both tech enthusiasts and everyday users. Its user-friendly UI, developed in WPF .NET, ensures a smooth and accessible experience for managing your server needs. Whether you're looking to securely store, share, or manage files within your personal network, OpenBox makes it seamless and straightforward.
+OpenBox offers a open-source user-friendly solution for setting up a personal home server. Mimicking the functionality of services like Dropbox, OpenBox provides a cost-effective and efficient alternative for those seeking to manage their own server. With an easy drag-and-drop interface for file management and simple server deployment using Docker, OpenBox is ideal for both tech enthusiasts and everyday users. Its user-friendly UI, developed in WPF .NET, ensures a smooth and accessible experience for managing your server needs. Whether you're looking to securely store, share, or manage files within your personal network, OpenBox makes it seamless and straightforward.
 
 ## Features
 - **Ease of Use**: Drag and drop files directly into your server.
