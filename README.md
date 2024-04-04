@@ -21,6 +21,7 @@ OpenBox stands as a cutting-edge, open-source API designed to be seamlessly inte
 - **Ease of Use**
 - **Simple Server Deployment**
 - **Clean Architecture Design**
+- **Zero-Knowledge**
 
 ## Contributing
 Interested in contributing to OpenBox? Great! Please submit a pull request with details of your changes. We appreciate your efforts to improve the project.
