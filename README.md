@@ -15,30 +15,12 @@
 </p>
 
 ## Introduction
-OpenBox offers a open-source user-friendly solution for setting up a personal home server. Mimicking the functionality of services like Dropbox, OpenBox provides a cost-effective and efficient alternative for those seeking to manage their own server. With an easy drag-and-drop interface for file management and simple server deployment using Docker, OpenBox is ideal for both tech enthusiasts and everyday users. Its user-friendly UI, developed in WPF .NET, ensures a smooth and accessible experience for managing your server needs. Whether you're looking to securely store, share, or manage files within your personal network, OpenBox makes it seamless and straightforward.
+OpenBox stands as a cutting-edge, open-source API designed to be seamlessly integrated into new or existing software solutions. It is a purely technical tool, built for developers who are crafting the next generation of applications for any setting, be it business or personal use. Unlike standalone applications, OpenBox is engineered to enhance your projects with advanced data management capabilities. It supports deployment in diverse environments, including Docker and Azure, ensuring flexibility and scalability. Central to its architecture is a zero-knowledge design, prioritizing the security and privacy of data storage, transmission, and reception. As a highly adaptable technology, OpenBox empowers developers to build more secure, efficient, and innovative applications, leveraging its robust API to meet the complex demands of today's digital landscape.
 
 ## Features
-- **Ease of Use**: Drag and drop files directly into your server.
-- **Simple Server Deployment**: Easily deploy your server side with Docker.
-- **User-Friendly Interface**: Developed using WPF .NET for a smooth user experience.
-
-## Installation
-**Server Side:**
-```shell
-git clone https://github.com/Terrell-byte/OpenBox
-cd OpenBox/
-git config core.sparseCheckout true
-echo "server/*" >> .git/info/sparse-checkout
-git checkout
-cd server/Docker
-docker-compose build
-docker-compose up
-```
-**Client Side:**
-Download the latest release .exe file from our releases page.
-
-## Usage
-After installation, connect to your server's IP address. The system will prompt you to create a new admin profile. As an admin, you can create new user accounts for family and friends and assign permissions as needed.
+- **Ease of Use**
+- **Simple Server Deployment**
+- **Clean Architecture Design**
 
 ## Contributing
 Interested in contributing to OpenBox? Great! Please submit a pull request with details of your changes. We appreciate your efforts to improve the project.
