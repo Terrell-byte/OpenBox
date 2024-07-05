@@ -1,0 +1,11 @@
+database:
+  host: "localhost"
+  port: 8000
+  user: "superuser"
+  pass: "password"
+  namespace: "openbox"
+  db_name: "openbox-DB"
+
+server:
+  host: "0.0.0.0"
+  port: 3000

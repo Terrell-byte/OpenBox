@@ -1,0 +1,9 @@
+FROM surrealdb/surrealdb:latest
+RUN adduser --disabled-password --gecos '' surrealdb
+RUN mkdir -p /data /app && chown -R surrealdb:surrealdb /data /app
+COPY config.yml /app/config.yml
+RUN chown surrealdb:surrealdb /app/config.yml
+USER surrealdb
+EXPOSE 8000
+VOLUME /data
+CMD ["start", "--user", "surrealdb", "--pass", "securepassword", "--bind", "0.0.0.0:8000", "file:///data/srdb.db"]

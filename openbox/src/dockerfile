@@ -1,0 +1,5 @@
+## dockerfile for the rust api image WIP
+FROM rust:1.54.0 as builder
+WORKDIR /usr/src/openbox
+COPY . .
+RUN cargo install --path .
