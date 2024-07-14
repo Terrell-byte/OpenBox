@@ -24,7 +24,7 @@ impl T_UserRepository for UserRepository {
         Ok(())
     }
 
-    async fn get_user(&self, public_key: &str) -> Result<User> {
+    async fn get_user(&self, public_key: &[u8]) -> Result<User> {
         let user: Option<User> = self.db
             .select(("users", public_key))
             .await?;

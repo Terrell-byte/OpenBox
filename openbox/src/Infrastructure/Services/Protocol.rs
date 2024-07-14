@@ -9,7 +9,7 @@ impl T_Protocol for Protocol {
         Ok("generated_payload".to_string())
     }
 
-    fn verify_signature(&self, payload: &str, signature: &str) -> Result<bool> {
+    fn verify_signature(&self, public_key: &[u8], payload: &[u8], signature: &[u8]) -> Result<bool> {
         Ok(true)
     }
 }
