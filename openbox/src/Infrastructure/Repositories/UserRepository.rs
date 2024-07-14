@@ -2,27 +2,32 @@ use crate::Application::traits::T_UserRepository;
 use crate::Domain::UserEntity::User;
 use surrealdb::Surreal;
 use surrealdb::engine::remote::ws::Client;
-use surrealdb::opt::auth::Root;
+use anyhow::Result;
 
 pub struct UserRepository {
     db: Surreal<Client>,
 }
 
 impl UserRepository {
-    pub async fn new(db: Surreal<Client>) -> Self {
+    pub fn new(db: Surreal<Client>) -> Self {
         Self { db }
     }
-    pub async fn create_user(&self, user: &User) -> Result<(), Box<dyn std::error::Error>> {
+}
+
+#[async_trait::async_trait]
+impl T_UserRepository for UserRepository {
+    async fn create_user(&self, user: &User) -> Result<()> {
         self.db
             .create("users")
             .content(user)
             .await?;
         Ok(())
     }
-    pub async fn get_user(&self, public_key: &str) -> Result<User, Box<dyn std::error::Error>> {
+
+    async fn get_user(&self, public_key: &str) -> Result<User> {
         let user: Option<User> = self.db
             .select(("users", public_key))
             .await?;
-        user.ok_or_else(|| Box::new(std::io::Error::new(std::io::ErrorKind::NotFound, "!USER NOT FOUND!")))     
+        user.ok_or_else(|| anyhow::anyhow!("User not found"))
     }
 }
