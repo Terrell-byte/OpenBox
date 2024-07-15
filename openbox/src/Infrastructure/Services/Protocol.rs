@@ -23,9 +23,15 @@ impl T_Protocol for Protocol {
     }
 
     fn verify_signature(&self, public_key: &[u8], payload: &[u8], signature: &[u8]) -> Result<bool> {
-        Ok(true)
+        let public_key = ed25519::PublicKey::from_bytes(public_key)?;
+        let signature = ed25519::Signature::from_bytes(signature)?;
+        public_key.verify(payload, &signature).is_ok()
     }
+
+    // TODO: Refactor this
     fn salt_data(&self, payload: &[u8], data: &[u8]) -> Result<Data> {
-        Ok(Data)
+        let mut data = data.to_vec();
+        data.extend_from_slice(payload);
+        Ok(data)
     }
 }
